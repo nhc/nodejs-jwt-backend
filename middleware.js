@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken')
 
 exports.verify = function(req, res, next){
     let accessToken = req.cookies.jwt
-
+    
     //if there is no token stored in cookies, the request is unauthorized
     if (!accessToken){
         return res.status(403).send()
@@ -19,5 +19,5 @@ exports.verify = function(req, res, next){
         //if an error occured return request unauthorized error
         return res.status(401).send()
     }
-    
+
 }

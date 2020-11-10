@@ -1,2 +1,2 @@
 # nodejs-jwt-backend
-An authentication module for React usimg JWT
+An authentication module for React using JWT
